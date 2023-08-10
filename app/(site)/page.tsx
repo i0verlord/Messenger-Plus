@@ -1,3 +1,6 @@
+import images from 'next/image';
+import Authform from './components/AuthForm';
+
 export default function Home() {
     return (
       <div
@@ -14,26 +17,25 @@ export default function Home() {
       >
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
             <img
-                alt="logo"
                 height="48"
                 width="48"
                 className="mx-auto w-auto"
                 src="/images/logo.webp"
-                />
+            />
             <h2
-                className="
+                className='
                 mt-6
                 text-center
                 text-3xl
-                font-bold
+                font-bol
                 tracking-tight
                 text-gray-900
-                "
+                '
             >
                 Sign in to your Account
             </h2>
         </div>
-        {/* AuthForm */}
-      </div>
+    <Authform />
+    </div>
     )
 }
