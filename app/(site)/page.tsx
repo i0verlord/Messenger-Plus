@@ -1,10 +1,9 @@
-import images from 'next/image';
+import Image from 'next/image';
 import Authform from './components/AuthForm';
 
 export default function Home() {
     return (
-      <div
-        className="
+      <div className="
         flex
         min-h-full
         flex-col
@@ -16,10 +15,11 @@ export default function Home() {
         "
       >
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-            <img
-                height="48"
-                width="48"
-                className="mx-auto w-auto"
+            <Image
+                alt='logo'
+                height={48}
+                width={48}
+                className='mx-auto w-auto'
                 src="/images/logo.webp"
             />
             <h2
