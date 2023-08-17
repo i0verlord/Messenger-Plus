@@ -76,7 +76,9 @@ const Authform = () => {
                     <Input
                         id='email'
                         label="Email"
-                        register={register} />
+                        register={register}
+                        errors={errors}    
+                    />
                 </form>
             </div>
         </div>
