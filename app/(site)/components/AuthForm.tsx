@@ -2,11 +2,13 @@
 
 import Button from '@/app/components/Button';
 import Input from '@/app/components/inputs/input';
+import axios from 'axios';
 
 import { useCallback , useState } from 'react';
 import { FieldValues , SubmitHandler, useForm } from 'react-hook-form';
 import { BsGithub, BsGoogle } from 'react-icons/bs';
 import AuthSocialButton from './AuthSocialButton';
+import { data } from 'autoprefixer';
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -40,7 +42,7 @@ const Authform = () => {
         setIsLoading(true);
 
         if (variant === 'REGISTER') {
-            // Axias Register
+            axios.post('/apo/register', data)
         }
 
         if (variant === 'LOGIN') {
